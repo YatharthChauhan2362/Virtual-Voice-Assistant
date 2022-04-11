@@ -76,6 +76,10 @@ if __name__ == "__main__":  # main program
 
         # logic building for tasks
 
+        if "open visual studio code" in query:
+            npath = "C:\\Users\\Dell\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            os.startfile(npath)
+
         if "open notepad" in query:
             npath = "C:\\Windows\\system32\\notepad.exe"
             os.startfile(npath)
@@ -133,12 +137,12 @@ if __name__ == "__main__":  # main program
             webbrowser.open("www.stackoverflow.com")
 
         elif "open google" in query:
-            speak("sir, what should i search on google")
+            speak("Sir, What Should I Search On Google")
             cm = takecommand().lower()
             webbrowser.open(f"{cm}")
 
-        elif "song on youtube" in query:
-            kit.playonyt("see you again")
+        # elif "song on youtube" in query:
+        #     kit.playonyt("see you again")
 
         elif 'timer' in query or 'stopwatch' in query:
             speak("For how many minutes?")
@@ -187,7 +191,7 @@ if __name__ == "__main__":  # main program
             time.sleep(1)
             pyautogui.keyUp("alt")
 
-        elif 'play' in query:
-            song = query.replace('play', '')
-        speak('playing ' + song)
-        pywhatkit.playonyt(song)
+        # elif 'play' in query:
+        #     song = query.replace('play', '')
+        # speak('playing ' + song)
+        # pywhatkit.playonyt(song)
