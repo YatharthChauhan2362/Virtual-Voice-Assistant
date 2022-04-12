@@ -80,6 +80,11 @@ if __name__ == "__main__":  # main program
             npath = "C:\\Users\\Dell\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(npath)
 
+        # elif 'play' in query:
+        #     song = query.replace('play', '')
+        # speak('playing ' + song)
+        # pywhatkit.playonyt(song)
+
         if "open notepad" in query:
             npath = "C:\\Windows\\system32\\notepad.exe"
             os.startfile(npath)
@@ -190,8 +195,3 @@ if __name__ == "__main__":  # main program
             pyautogui.press("tab")
             time.sleep(1)
             pyautogui.keyUp("alt")
-
-        # elif 'play' in query:
-        #     song = query.replace('play', '')
-        # speak('playing ' + song)
-        # pywhatkit.playonyt(song)
